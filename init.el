@@ -32,3 +32,10 @@
     (require 'yasnippet) ;; not yasnippet-bundle
     (yas/initialize)
     (yas/load-directory "~/.emacs.d/site-lisp/yasnippet-0.6.1c/snippets")
+
+;; color-theme
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-gnome)))
