@@ -81,7 +81,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (light-blue)))
+ '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
+ '(custom-enabled-themes (quote (wheatgrass)))
  '(gud-gdb-command-name "gdb --annotate=1")
  '(inhibit-startup-screen t)
  '(large-file-warning-threshold nil)
@@ -122,3 +123,11 @@
 (load-file "~/.emacs.d/org-init.el")
 
 ;; (load-library "init_python")
+
+;; Bookmark-Plus
+;; http://www.emacswiki.org/emacs/BookmarkPlus
+;; https://github.com/emacsmirror/bookmark-plus
+(add-to-list 'load-path "~/.emacs.d/site-lisp/bookmark-plus")
+(require 'bookmark+)
+
+
