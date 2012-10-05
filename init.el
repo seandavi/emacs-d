@@ -131,3 +131,10 @@
 (require 'bookmark+)
 
 
+;; Beginning of the el4r block:
+;; RCtool generated this block automatically. DO NOT MODIFY this block!
+(add-to-list 'load-path "/usr/local/Cellar/ruby/1.9.2-p290/share/emacs/site-lisp")
+(require 'el4r)
+;; (el4r-boot)
+;; End of the el4r block.
+
