@@ -12,6 +12,7 @@
 (require 'ipython)
 (setq py-python-command-args '("--pylab"))
 
+(add-hook 'python-mode-hook 'outline-minor-mode)
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/python-mode.el-6.0.11") 
 (setq py-install-directory "~/.emacs.d/site-lisp/python-mode.el-6.0.11") 
@@ -116,8 +117,9 @@
 ;; CEDET
 (load-file "~/.emacs.d/site-lisp/cedet-1.1/common/cedet.el")
 (global-ede-mode 1)                      ; Enable the Project management system
-(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(semantic-load-enable-excessive-code-helpers)      ; Enable prototype help and smart completion 
 (global-srecode-minor-mode 1)            ; Enable template insertion menu
+(global-semantic-tag-folding-mode 1)
 
 ;; ORG MODE
 (load-file "~/.emacs.d/org-init.el")
